@@ -1,0 +1,12 @@
+{
+  "name": "thant-eaindray-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal, three-page portfolio covering Thant Eaindray's introduction, technical projects, and club involvement.",
+  "type": "module",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "start": "node serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

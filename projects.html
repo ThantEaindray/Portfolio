@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafaf8" />
+    <meta name="description" content="Technical projects, development skills, and certifications from Thant Eaindray, including GitMart and Magical Academia." />
+    <title>Projects — Thant Eaindray</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12" /></symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6" /></symbol>
+      <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6" /></symbol>
+      <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 15v6h16v-6" /></symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Thant Eaindray, About page">
+          <span class="monogram" aria-hidden="true">te<span>.</span></span>
+          <span class="brand-name">Thant Eaindray</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">About</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="clubs.html">Clubs</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden><svg class="icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z" /></svg><svg class="icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg></button>
+        <a class="header-resume" href="resume.pdf" download="Thant_Eaindray_Resume.pdf">Résumé <svg class="icon" aria-hidden="true"><use href="#download" /></svg></a>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="page-intro container" aria-labelledby="page-title">
+        <p class="eyebrow section-label"><span>02</span> Technical work</p>
+        <h1 id="page-title">Projects &<br /><em>technical work.</em></h1>
+        <p>Full-stack applications, database workflows, and the technical details behind them.</p>
+      </section>
+
+      <section class="work-section section container" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow section-label"><span>01</span> Selected work</p><h2 id="work-title">Selected projects.</h2></div>
+          <p class="section-description">A few projects that have taught me<br class="desktop-break" /> to think deeper and build better.</p>
+        </div>
+
+        <article class="project">
+          <div class="project-visual gitmart-visual">
+            <span class="visual-eyebrow">01 / Full-stack marketplace</span>
+            <img class="project-screenshot" src="images/gitmart.jpeg" alt="GitMart account registration page" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <p class="project-meta">Team lead · Team of 4 <span>May – Aug 2026</span></p>
+            <h3>GitMart</h3>
+            <p class="project-subtitle">A marketplace built around reliable reservations.</p>
+            <p class="project-description">A full-stack application for listing items and managing buyer reservations. I led the team and built the reservation workflow, with particular care for what happens when requests compete.</p>
+            <ul class="project-highlights">
+              <li>Used PostgreSQL transactions and row locking to keep reservation decisions and listing status consistent.</li>
+              <li>Built registration, login and profiles with JWT authentication, plus listing features including owner-only editing, search, sorting and image uploads.</li>
+              <li>Reviewed teammates’ pull requests and resolved merge conflicts to keep the main branch stable.</li>
+            </ul>
+            <div class="project-stats" aria-label="Tests written for the reservation workflow">
+              <span><strong>43</strong> Unit tests</span><span><strong>17</strong> Integration tests</span><span><strong>5</strong> End-to-end tests</span>
+            </div>
+            <ul class="tags" aria-label="GitMart technologies"><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Jest</li><li>Playwright</li><li>GitHub Actions</li></ul>
+            <div class="project-links"><a class="project-link" href="https://github.com/ThantEaindray/GitMart" target="_blank" rel="noopener noreferrer">Repository <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual academia-visual">
+            <span class="visual-eyebrow">02 / Gamified wellness</span>
+            <img class="project-screenshot" src="images/magi.jpeg" alt="Magical Academia homepage showing wellness challenges, spell rewards and competitions" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <p class="project-meta">Solo project <span>Jan – Feb 2026</span></p>
+            <h3>Magical Academia</h3>
+            <p class="project-subtitle">Making everyday wellness a little more rewarding.</p>
+            <p class="project-description">A gamified wellness platform where users complete challenges, earn points, unlock spells, and take part in competitions. I built the API and frontend from the ground up.</p>
+            <ul class="project-highlights">
+              <li>Organised the REST API into routes, controllers, and models, with a shared MySQL connection pool.</li>
+              <li>Implemented bcrypt password hashing, JWT authentication, and creator-only challenge editing.</li>
+              <li>Connected points, spell unlocks, competitions, and leaderboards with a dynamic JavaScript frontend.</li>
+            </ul>
+            <ul class="tags" aria-label="Magical Academia technologies"><li>JavaScript</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>Bootstrap</li></ul>
+            <div class="project-links"><a class="project-link" href="https://github.com/ThantEaindray/MagicalAcademia" target="_blank" rel="noopener noreferrer">Repository <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="project-link" href="https://youtu.be/4dmVmm3q4fk?si=SYi0svwYqrklrQRz" target="_blank" rel="noopener noreferrer">Video demo <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual data-visual">
+            <span class="visual-eyebrow">03 / Data analysis</span>
+            <a class="chart-link" href="images/datanalysis.jpeg" target="_blank" rel="noopener noreferrer">
+              <img class="project-screenshot" src="images/datanalysis.jpeg" alt="Line chart of quarterly HDB resale applications by flat type from 2017 to 2026" loading="lazy" />
+              <span>View chart in full size <span class="sr-only">(opens in a new tab)</span> ↗</span>
+            </a>
+          </div>
+          <div class="project-content">
+            <p class="project-meta">Solo project <span>Jul – Aug 2026</span></p>
+            <h3>HDB resale price analysis</h3>
+            <p class="project-description">Cleaned and merged four data.gov.sg datasets with over 236,000 rows, created measures such as price per square metre, and analysed price, demand and supply trends with visualisations.</p>
+            <ul class="tags" aria-label="Data analysis technologies"><li>Python</li><li>pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Jupyter</li></ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="technical-section section" aria-labelledby="technical-title">
+        <div class="container">
+          <div class="section-heading"><div><p class="eyebrow section-label"><span>02</span> Skills & learning</p><h2 id="technical-title">My technical foundation.</h2></div></div>
+          <div class="technical-grid">
+              <div class="skill-groups">
+                <p class="detail-heading">My toolkit</p>
+                <dl>
+                  <div><dt>Languages</dt><dd>JavaScript, Python, SQL, HTML, CSS</dd></div>
+                  <div><dt>Development</dt><dd>Node.js, Express.js, Bootstrap, REST APIs</dd></div>
+                  <div><dt>Databases</dt><dd>PostgreSQL, MySQL</dd></div>
+                  <div><dt>Testing & tools</dt><dd>Jest, Playwright, Postman, Git, GitHub, GitHub Actions, ESLint, Prettier</dd></div>
+                  <div><dt>Data & security</dt><dd>pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook, JWT, bcrypt, Burp Suite, Wireshark, Kali Linux</dd></div>
+                </dl>
+              </div>
+            <div class="certifications"><div><h3>Certifications</h3><ul><li>Building with the Claude API</li><li>Claude Code in Action</li><li>Introduction to Model Context Protocol</li><li>Introduction to Agent Skills</li></ul></div></div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="page-navigation container" aria-label="Explore portfolio pages">
+        <a href="index.html"><span class="detail-heading">Personal introduction</span><strong>About me</strong><svg class="icon" aria-hidden="true"><use href="#arrow-right" /></svg></a>
+        <a href="clubs.html"><span class="detail-heading">Clubs & community</span><strong>Beyond the code</strong><svg class="icon" aria-hidden="true"><use href="#arrow-right" /></svg></a>
+      </nav>
+    </main>
+
+    <footer class="site-footer container"><p>© 2026 Thant Eaindray</p><a class="text-link" href="index.html#contact">Get in touch <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a><a class="text-link" href="#top">Back to top <svg class="icon up-icon" aria-hidden="true"><use href="#arrow-down" /></svg></a></footer>
+  </body>
+</html>
